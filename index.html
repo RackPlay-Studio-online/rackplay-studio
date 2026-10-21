@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RackPlay Studio — playful digital experiences, games, and interactive design.">
+  <title>RackPlay Studio — Playful by Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="RackPlay Studio home">
+        <span class="brand-mark">RP</span>
+        <span>RackPlay Studio</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- <a class="button button-lime header-cta" href="#contact">HIRE ME <span>↗</span></a> -->
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-title">
+          <h1>RackPlay</h1>
+          <p class="design-line">WE MAKE<br class="mobile-break"> THINGS PLAY.</p>
+          <h2 class="studio-word">Studio<span class="period">.</span></h2>
+        </div>
+
+        <div class="hero-copy">
+          <p><strong>Independent game and experience studio.</strong> We turn curious ideas into playful digital products, games, and interactive worlds.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#contact">LET'S TALK <span>↗</span></a>
+            <a class="button button-white" href="#work">SEE THE WORK</a>
+          </div>
+          <div class="desktop-hint">
+            <span class="tag">POST</span>
+            <span>This little desktop has a few secrets.</span>
+            <button class="button button-small" id="surpriseButton">TRY IT</button>
+          </div>
+        </div>
+
+        <div class="floating-window todo-window" id="todoWindow">
+          <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><strong>todo.txt</strong></div>
+          <div class="window-content checklist">
+            <label><input type="checkbox" checked> Dream up an idea</label>
+            <label><input type="checkbox" checked> Make it playable</label>
+            <label><input type="checkbox"> Ship your project</label>
+          </div>
+        </div>
+
+        <div class="floating-window stats-window">
+          <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><strong>clicks.exe</strong></div>
+          <div class="window-content">
+            <span class="stat-number" id="clickCount">0</span>
+            <p>ideas clicked into existence.<br>Yours could be next.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="Studio services">
+        <div class="ticker-track">
+          <span>AVAILABLE FOR PROJECTS</span><b>✦</b><span>GAME DEVELOPMENT</span><b class="pink">✦</b><span>INTERACTIVE EXPERIENCES</span><b>✦</b><span>VR / AR</span><b class="pink">✦</b>
+          <span>AVAILABLE FOR PROJECTS</span><b>✦</b><span>GAME DEVELOPMENT</span><b class="pink">✦</b><span>INTERACTIVE EXPERIENCES</span><b>✦</b><span>VR / AR</span><b class="pink">✦</b>
+        </div>
+      </div>
+
+      <section class="content-section work-section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">01 / SELECTED WORK</p>
+          <h2>Little ideas.<br><span>Big play energy.</span></h2>
+        </div>
+        <div class="work-grid">
+          <!-- Project 1 -->
+            <article class="work-card">
+              <div class="work-media video-media">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/VIDEO_ID_1"
+                  title="Game Development Showcase"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h3>Game Development</h3>
+                  <p>Gameplay mechanics and playful worlds.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="work-card">
+              <div class="work-media video-media">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/VIDEO_ID_2"
+                  title="VR Project Showcase"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h3>VR Experiences</h3>
+                  <p>Immersive and interactive projects.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="work-card">
+              <div class="work-media video-media">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/VIDEO_ID_3"
+                  title="Prototype Showcase"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h3>Creative Prototypes</h3>
+                  <p>Ideas brought to life through experimentation.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+        <!-- STATIC IMAGE GALLERY -->
+        <div class="visual-gallery">
+
+          <div class="gallery-heading">
+            <div>
+              <p class="eyebrow">MORE FROM THE STUDIO</p>
+              <h2>Visual Playground<span>.</span></h2>
+            </div>
+            <p class="gallery-description">
+              A closer look at our games, experiments, artwork and ideas.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+
+            <!-- Large featured image -->
+            <article class="gallery-card gallery-featured">
+              <img src="assets/images/project-01.jpg"
+                  alt="Featured game project"
+                  loading="lazy">
+              <div class="gallery-caption">
+                <div>
+                  <h3>Project One</h3>
+                  <p>Game development · 2026</p>
+                </div>
+                <span class="gallery-tag">GAME DESIGN</span>
+              </div>
+            </article>
+
+            <!-- Image 2 -->
+            <article class="gallery-card">
+              <img src="assets/images/project-02.jpg"
+                  alt="Creative 3D artwork"
+                  loading="lazy">
+              <div class="gallery-caption">
+                <div>
+                  <h3>3D Experiments</h3>
+                  <p>3D art · 2026</p>
+                </div>
+                <span class="gallery-tag">3D ART</span>
+              </div>
+            </article>
+
+            <!-- Image 3 -->
+            <article class="gallery-card">
+              <img src="Images\VR-1.jpeg"
+                  alt="VR environment design"
+                  loading="lazy">
+              <div class="gallery-caption">
+                <div>
+                  <h3>Virtual Worlds</h3>
+                  <p>VR / AR · 2026</p>
+                </div>
+                <span class="gallery-tag">VR / AR</span>
+              </div>
+            </article>
+
+            <!-- Image 4 -->
+            <article class="gallery-card">
+              <img src="Images\Vr-2.png"
+                  alt="Game interface design"
+                  loading="lazy">
+              <div class="gallery-caption">
+                <div>
+                  <h3>Interface Studies</h3>
+                  <p>UI / UX · 2026</p>
+                </div>
+                <span class="gallery-tag">UI DESIGN</span>
+              </div>
+            </article>
+
+            <!-- Image 5 -->
+            <article class="gallery-card">
+              <img src="assets/images/project-05.jpg"
+                  alt="Gameplay prototype"
+                  loading="lazy">
+              <div class="gallery-caption">
+                <div>
+                  <h3>Hold Fast</h3>
+                  <p>Gameplay prototype · 2026</p>
+                </div>
+                <span class="gallery-tag">PROTOTYPE</span>
+              </div>
+            </article>
+
+            <!-- Wide image -->
+            <article class="gallery-card gallery-wide">
+              <img src="assets/images/project-06.jpg"
+                  alt="Featured studio artwork"
+                  loading="lazy">
+              <div class="gallery-caption">
+                <div>
+                  <h3>Creative Playground</h3>
+                  <p>Experiments and explorations · 2026</p>
+                </div>
+                <span class="gallery-tag">EXPERIMENTAL</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- TEAM SECTION -->
+      <section class="team-section content-section" id="team">
+
+        <div class="team-heading">
+          <div>
+            <p class="eyebrow">02 / THE PEOPLE BEHIND THE PIXELS</p>
+            <h2>Small team.<br><span>Big ideas.</span></h2>
+          </div>
+          <p class="team-intro">
+            Two curious makers building playful games, immersive experiences,
+            and things that make people say “one more try.”
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- TEAM MEMBER 1 -->
+          <article class="team-card team-card-purple">
+            <div class="team-portrait">
+              <img src="Images\Teg-removebg-preview.png"
+                  alt="Portrait of the studio founder"
+                  loading="lazy">
+              <span class="team-sticker">GAME<br>MAKER</span>
+            </div>
+
+            <div class="team-info">
+              <div>
+                <h3>Tegveer Singh</h3>
+                <p>Game & VR Developer · Game Artist</p>
+              </div>
+              <span class="team-number">01</span>
+            </div>
+
+            <p class="team-bio">
+              Turning ideas into playable experiences, interactive systems,
+              and virtual worlds.
+              <a href="mailto:tegveer@rack-play.co.in">tegveer@rack-play.co.in</a>
+            </p>
+          </article>
+
+          <!-- TEAM MEMBER 2 -->
+          <article class="team-card team-card-lime">
+            <div class="team-portrait">
+              <img src="Images\Ruby.png"
+                  alt="Portrait of the studio creative partner"
+                  loading="lazy">
+              <span class="team-sticker">MADE<br>BY HAND</span>
+            </div>
+
+            <div class="team-info">
+              <div>
+                <h3>Ruby Rana</h3>
+                <p>3D Artist · Visual Designer · 3D / 2D Animator</p>
+              </div>
+              <span class="team-number">02</span>
+              
+            </div>
+
+            <p class="team-bio">
+              Bringing concepts to life through 3D art, visual storytelling,
+              and thoughtful details.
+              <a href="mailto:ruby@rack-play.co.in">ruby@rack-play.co.in</a>
+            </p>
+          </article>
+
+        </div>
+
+        <div class="team-footer">
+          <span>INDEPENDENT BY CHOICE.</span>
+          <span>BETTER TOGETHER. ✦</span>
+        </div>
+      </section>
+
+      <section class="services-section content-section" id="services">
+        <p class="eyebrow">03 / WHAT WE DO</p>
+        <h2>Good ideas deserve<br>to <span>get out there.</span></h2>
+        <div class="service-list">
+          <div class="service-row"><span class="service-index">01</span><h3>VR / AR experiences</h3><p>Immersive training, interactive learning and virtual worlds.</p></div>
+          <div class="service-row"><span class="service-index">02</span><h3>Game development</h3><p>Mechanics, gameplay systems, prototypes and polished builds.</p></div>
+          <div class="service-row"><span class="service-index">03</span><h3>Creative prototyping</h3><p>Fast experiments that turn “what if?” into “let's try it.”</p></div>
+        </div>
+      </section>
+
+      <section class="process-section content-section" id="process">
+        <p class="eyebrow">04 / THE PROCESS</p>
+        <h2>Small steps.<br><span>Solid results.</span></h2>
+        <div class="process-grid">
+          <article><span>01</span><h3>Listen</h3><p>We get clear on your idea, audience and what success looks like.</p></article>
+          <article><span>02</span><h3>Make</h3><p>We build the right-sized prototype and test what matters early.</p></article>
+          <article><span>03</span><h3>Polish</h3><p>We refine the experience, fix the rough edges and get it ready to ship.</p></article>
+        </div>
+      </section>
+
+      <section class="quote-section content-section" id="kind-words">
+        <span class="quote-mark">“</span>
+        <p>Good work should feel thoughtful, a little unexpected, and genuinely fun to use.</p>
+        <span class="quote-credit">THE RACKPLAY WAY</span>
+      </section>
+
+      <section class="contact-section content-section" id="contact">
+        <p class="eyebrow">05 / YOUR TURN</p>
+        <h2>Got a good<br><span>“what if?”</span></h2>
+        <p class="contact-copy">Tell us what you're imagining. Big idea, tiny prototype, weird experiment — we're listening.</p>
+        <a class="button button-lime contact-button" href="mailto:rackplayprojects@rack-play.co.in">START A PROJECT <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#home"><span class="brand-mark">RP</span><span>RackPlay Studio</span></a>
+      <p>Made with curiosity and too much coffee.</p>
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
