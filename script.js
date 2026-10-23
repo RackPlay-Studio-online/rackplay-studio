@@ -19,7 +19,7 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
-let clicks = 0;
+let clicks = 2;
 surpriseButton.addEventListener("click", () => {
   clicks += Math.floor(Math.random() * 9) + 1;
   clickCount.textContent = clicks.toLocaleString("en-US");
